@@ -1,0 +1,74 @@
+.menu {
+    font-family: "MuseoSansCyrl", sans-serif;
+    font-weight: 300;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    filter: brightness(0.8);
+    white-space: nowrap;
+  
+    .burger-menu {
+      display: none;
+      font-size: 30px;
+    }
+  
+    ol {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  
+      li {
+        
+        display: inline-block;
+        margin: 0 10px;
+        position: relative;
+        cursor: pointer;
+        transition: color 0.3s, border-bottom-color 0.3s, filter 0.3s;
+  
+        &::after {
+          content: "";
+          position: absolute;
+          left: 0;
+          right: 0;
+          bottom: -2px;
+          height: 2px;
+          background-color: transparent;
+          transition: background-color 0.3s;
+        }
+  
+        &:hover {
+          color: rgb(170, 170, 169);
+          filter: brightness(0.8);
+  
+          &::after {
+            background-color: white;
+          }
+        }
+  
+        &.selected {
+          color: white;
+          filter: brightness(0.8);
+  
+          &::after {
+            background-color: white;
+          }
+        }
+      }
+    }
+  
+    // Медиа-запрос для показа бургер меню при маленьких разрешениях экрана
+    @media screen and (max-width: 1200px) {
+      ol {
+        display: none; // Скрыть основное меню
+      }
+  
+      .burger-menu {
+        display: block; // Показать бургер меню
+      }
+    }
+  }
+  
