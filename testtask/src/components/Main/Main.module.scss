@@ -1,0 +1,33 @@
+.Main {
+	font-family: 'MuseoSansCyrl', sans-serif;
+	color: white;
+}
+
+.mainText {
+	margin-top: 2em;
+
+	font-weight: 700;
+	text-transform: uppercase;
+	display: inline-block;
+	font-size: 55px;
+	background: linear-gradient(
+		45deg,
+		#fff 25%,
+		rgb(255, 133, 98) 55%,
+		rgb(255, 56, 23)
+	);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.secondText {
+	font-weight: 300;
+	font-size: 23px;
+	width: 10em;
+	white-space: nowrap;
+
+	background: linear-gradient(45deg, #fff 25%, rgb(255, 133, 98));
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	padding-bottom: 3em;
+}

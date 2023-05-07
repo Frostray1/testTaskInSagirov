@@ -1,27 +1,59 @@
+
+
 .Header {
-  color: white;
-    width: 100%;
-    height: 100px;
-    border-bottom: 1px solid rgb(34,34,37);
-    background:black;
- 
+	color: white;
+	width: 100%;
+	height: 100px;
+	border-bottom: 1px solid rgb(34, 34, 37);
+	background: rgba(0, 0, 0,0.3);
+
+
 }
 
-.border {
-    
-    width: 315px; // Используем ширину 100% для адаптивности
-    height: 100px;
-    background: linear-gradient(to right, rgb(255,255,255) 7px, transparent 0, transparent calc(100% - 7px), rgb(255,255,255) 0) 0 0 / 100% 1px no-repeat,
-                linear-gradient(to right, rgb(255,255,255) 7px, transparent 0, transparent calc(100% - 7px), rgb(255,255,255) 0) 0 100% / 100% 1px no-repeat,
-                linear-gradient(to bottom, rgb(255,255,255) 7px, transparent 0, transparent calc(100% - 7px), rgb(255,255,255) 0) 0 0 / 1px 100% no-repeat,
-                linear-gradient(to bottom, rgb(255,255,255) 7px, transparent 0, transparent calc(100% - 7px), rgb(255,255,255) 0) 100% 0 / 1px 100% no-repeat,
-                linear-gradient(to bottom, rgb(34,34,37) 100%, rgb(34,34,37) 0) 0 0 / 1px 100% no-repeat,
-                linear-gradient(to bottom, rgb(34,34,37) 100%, rgb(34,34,37) 0) 100% 0 / 1px 100% no-repeat;
 
-    img {
-      padding: 2em 1em 1em 2em;
-    //   height: auto;
-    //   width: 100%; // Устанавливаем ширину картинки 100% для адаптивности
-    //   height: auto; // Автоматическая высота для сохранения пропорций
-    }
+
+
+.border {
+	width: 315px; 
+	height: 100px;
+	background: linear-gradient(
+				to right,
+				rgb(255, 255, 255) 7px,
+				transparent 0,
+				transparent calc(100% - 7px),
+				rgb(255, 255, 255) 0
+			)
+			0 0 / 100% 1px no-repeat,
+		linear-gradient(
+				to right,
+				rgb(255, 255, 255) 7px,
+				transparent 0,
+				transparent calc(100% - 7px),
+				rgb(255, 255, 255) 0
+			)
+			0 100% / 100% 1px no-repeat,
+		linear-gradient(
+				to bottom,
+				rgb(255, 255, 255) 7px,
+				transparent 0,
+				transparent calc(100% - 7px),
+				rgb(255, 255, 255) 0
+			)
+			0 0 / 1px 100% no-repeat,
+		linear-gradient(
+				to bottom,
+				rgb(255, 255, 255) 7px,
+				transparent 0,
+				transparent calc(100% - 7px),
+				rgb(255, 255, 255) 0
+			)
+			100% 0 / 1px 100% no-repeat,
+		linear-gradient(to bottom, rgb(34, 34, 37) 100%, rgb(34, 34, 37) 0) 0 0 /
+			1px 100% no-repeat,
+		linear-gradient(to bottom, rgb(34, 34, 37) 100%, rgb(34, 34, 37) 0) 100%
+			0 / 1px 100% no-repeat;
+
+	img {
+		padding: 2em 1em 1em 2em;
+	}
 }

@@ -1,9 +1,20 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styles from "./NavigateList.module.scss";
 
 const NavigateList = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+   
+  };
+
   return (
-    <div className={styles.menu}>
+    <div className={`${styles.menu} ${isOpen ? styles.open : ''}`}>
+      <div className={styles.burgerMenu} onClick={toggleMenu}>
+        <span>-</span>
+        
+      </div>
       <ol>
         <li>Главная</li>
         <li>Технология</li>
@@ -12,7 +23,6 @@ const NavigateList = () => {
         <li>О компании</li>
         <li>Контакты</li>
       </ol>
-      <div className={styles["burger-menu"]}>&#9776;</div>
     </div>
   );
 }

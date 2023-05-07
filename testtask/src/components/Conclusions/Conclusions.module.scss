@@ -1,0 +1,53 @@
+.ConclusionsBlock {
+	font-family: 'MuseoSansCyrl', sans-serif;
+	float: right;
+	margin-top: 2em;
+	filter: brightness(0.7);
+}
+
+
+
+.conclusionsItem {
+	text-align: center;
+	width: 165px;
+	height: 190px;
+	margin: 0.3em;
+	padding-top: 2em;
+	cursor: pointer;
+
+	h6 {
+		font-size: 12px;
+		font-weight: 100;
+		color: rgb(175, 175, 175);
+	}
+
+	h1 {
+		font-weight: 700;
+		font-size: 50px;
+		color: rgb(175, 175, 175);
+	}
+
+
+    
+      
+	// &:nth-child(1) {
+	//   background: linear-gradient(to top left, rgba(255, 255, 255, 0.1), transparent 55%);
+	//   color:red;
+	// }
+
+	// &:nth-child(2) {
+	//   background: linear-gradient(to top right, rgba(255, 255, 255, 0.1), transparent 55%);
+	// }
+
+	// &:nth-child(3) {
+	//   background: linear-gradient(to bottom left, rgba(255, 255, 255, 0.1), transparent 55%);
+	// }
+
+	// &:nth-child(4) {
+	//   background: linear-gradient(to bottom right, rgba(255, 255, 255, 0.1), transparent 55%);
+	// }
+}
+
+
+
+
