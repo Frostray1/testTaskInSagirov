@@ -9,7 +9,7 @@ const Main = () => {
 	return (
 		<Container className={styles.Main}>
 			<Row>
-				<Col >
+				<Col>
 					<h1 className={styles.mainText}>ПУТЕШЕСТВИЕ</h1>
 					<h5 className={styles.secondText}>на красную планету</h5>
 					<Button />
