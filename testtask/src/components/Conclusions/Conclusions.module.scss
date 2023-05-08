@@ -2,12 +2,10 @@
 	font-family: 'MuseoSansCyrl', sans-serif;
 	float: right;
 	margin-top: 2em;
-	filter: brightness(0.7);
 }
 
-
-
 .conclusionsItem {
+	filter: brightness(0.7);
 	text-align: center;
 	width: 165px;
 	height: 190px;
@@ -26,28 +24,55 @@
 		font-size: 50px;
 		color: rgb(175, 175, 175);
 	}
+	transition: filter 0.3s ease-in-out;
 
+	&:hover {
+		filter: brightness(1.2);
+	}
+}
 
-    
-      
-	// &:nth-child(1) {
-	//   background: linear-gradient(to top left, rgba(255, 255, 255, 0.1), transparent 55%);
-	//   color:red;
-	// }
+.conclusionsItemBackground_1 {
+	background: linear-gradient(
+		to top left,
+		rgba(255, 255, 255, 0.1),
+		transparent 55%
+	);
+}
 
-	// &:nth-child(2) {
-	//   background: linear-gradient(to top right, rgba(255, 255, 255, 0.1), transparent 55%);
-	// }
+.conclusionsItemBackground_2 {
+	background: linear-gradient(
+		to top right,
+		rgba(255, 255, 255, 0.1),
+		transparent 55%
+	);
+}
 
-	// &:nth-child(3) {
-	//   background: linear-gradient(to bottom left, rgba(255, 255, 255, 0.1), transparent 55%);
-	// }
+.conclusionsItemBackground_3 {
+	background: linear-gradient(
+		to bottom left,
+		rgba(255, 255, 255, 0.1),
+		transparent 55%
+	);
+}
 
-	// &:nth-child(4) {
-	//   background: linear-gradient(to bottom right, rgba(255, 255, 255, 0.1), transparent 55%);
-	// }
+.conclusionsItemBackground_4 {
+	background: linear-gradient(
+		to bottom right,
+		rgba(255, 255, 255, 0.1),
+		transparent 55%
+	);
 }
 
 
+@media (max-width: 770px) {
 
+	.ConclusionsBlock{
+		width: calc(165px + 165px + 1em);
+		float: none;
+		margin: 2em auto; 
+	}
+	
+	
+}
 
+	

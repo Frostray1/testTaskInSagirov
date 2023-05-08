@@ -2,6 +2,7 @@ import React from 'react'
 import styles from './Header.module.scss'
 import { Col, Container, Row } from 'react-bootstrap'
 import NavigateList from '../Navigate/NavigateList'
+import Logo from '../Logo/Logo'
 
 const Header = () => {
 	return (
@@ -9,9 +10,7 @@ const Header = () => {
 			<Container className={styles.container}>
 				<Row>
 					<Col>
-						<div className={styles.border}>
-							<img src='/images/logo.png' alt='logo' />
-						</div>
+						<Logo />
 					</Col>
 					<Col>
 						<NavigateList />

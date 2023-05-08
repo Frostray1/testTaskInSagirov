@@ -5,7 +5,6 @@
 
 .mainText {
 	margin-top: 2em;
-
 	font-weight: 700;
 	text-transform: uppercase;
 	display: inline-block;
@@ -25,9 +24,24 @@
 	font-size: 23px;
 	width: 10em;
 	white-space: nowrap;
-
 	background: linear-gradient(45deg, #fff 25%, rgb(255, 133, 98));
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 	padding-bottom: 3em;
+}
+
+@media (max-width: 770px) {
+	.Main {
+		text-align: center;
+		margin: 2em auto;
+	}
+	.secondText {
+		width: auto;
+	}
+}
+
+@media (max-width: 420px) {
+	.mainText {
+		font-size: 45px;
+	}
 }
